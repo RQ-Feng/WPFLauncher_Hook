@@ -56,9 +56,6 @@ namespace DotNetTranstor.Hookevent
             this.Font = MainFont;
 
             int y = 15;
-            int labelWidth = 80;
-            int inputLeft = 95;
-            int inputWidth = 320;
 
             // Title
             titleLabel = new Label

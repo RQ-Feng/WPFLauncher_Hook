@@ -252,37 +252,80 @@
 
 ### 1. 前置条件
 在开始之前，请确保您的系统已安装以下软件:
-- **[Rider](https://www.jetbrains.com/zh-cn/rider/)** (ps: 当然你用其他C# IDE也是可以的)
-- **[Git](https://git-scm.com/)**
+- **[.NET SDK](https://dotnet.microsoft.com/zh-cn/download)** (推荐 .NET 8.0+，用于 `dotnet` 命令行构建)
+- **[Visual Studio](https://visualstudio.microsoft.com/zh-hans/)** 或 **[Rider](https://www.jetbrains.com/zh-cn/rider/)** (也可直接用 CLI 构建)
 - **[.NET Framework 4.8 开发人员工具包](https://dotnet.microsoft.com/zh-cn/download/dotnet-framework/net48)**
-- **已经脱好壳的WPFLauncher.exe文件** (ps: 这里不说方法, 然后这个文件在MCLauncher根目录下)
+- **已脱壳的 WPFLauncher.exe 文件**
 
-### 2 快速开始
-第一步: git clone此项目<br/>
-```
+### 2. 依赖准备
+
+外部 DLL 引用位于仓库根目录的 `References/` 文件夹中，需自行准备以下文件：
+
+| 文件 | 说明 |
+|------|------|
+| `CefSharp.dll` | CefSharp 浏览器控件 |
+| `NLog.dll` | NLog 日志库 |
+| `websocket-sharp.dll` | WebSocket 库 |
+| `WPFControls.dll` | WPF 控件库 |
+| `WPFLauncher.exe` | **已脱壳的** WPFLauncher 主程序 |
+
+
+### 3. 快速开始
+
+#### 方式一：使用 dotnet CLI（推荐）
+
+```bash
+# 1. 克隆仓库
 git clone https://github.com/daijunhaoMinecraft/WPFLauncher_Hook.git
+cd WPFLauncher_Hook
+
+# 2. 将所需 DLL 放入 References/ 文件夹
+
+# 3. 还原 NuGet 包
+dotnet restore
+
+# 4. 编译 Debug 版本
+dotnet build -c Debug
+
+# 编译 Release 版本
+dotnet build -c Release
 ```
-第二步: 使用 Rider 打开sln解决方案<br/>
+
+编译输出位置：`Mcl.Core\bin\x86\Debug\net48\Mcl.Core.dll`
+
+#### 方式二：使用 Visual Studio / Rider
+
+第一步：`git clone` 此项目，并将所需 DLL 放入仓库根目录的 `References/` 文件夹
+
+第二步：使用 Rider 打开 `Mcl.Core.sln` 解决方案
 
 ![image-20260320192704888](https://raw.githubusercontent.com/daijunhaoMinecraft/WPFLauncher_Hook/main/assets/image-20260320192704888.png)
 
-第三步: 定位到此依赖项 => .NETFramework 4.8 => 程序集
+第三步：打开项目依赖项，确认 `References/` 中的 DLL 已自动引用（如缺少可手动添加）
 
 ![image-20260320192741186](https://raw.githubusercontent.com/daijunhaoMinecraft/WPFLauncher_Hook/main/assets/image-20260320192741186.png)
 
-如果这里面有出现不存在的库, 那么你需要右键删除, 然后右键"程序集", 点击"引用"
+如果仍有缺失的引用，右键"程序集" → 点击"引用"
 
 ![image-20260320192913935](https://raw.githubusercontent.com/daijunhaoMinecraft/WPFLauncher_Hook/main/assets/image-20260320192913935.png)
 
-点击"添加自"
+点击"添加自"，定位到 `References/` 文件夹选择对应 DLL 即可
 
 ![image-20260320193518887](https://raw.githubusercontent.com/daijunhaoMinecraft/WPFLauncher_Hook/main/assets/image-20260320193518887.png)
 
-之后定位到MCLauncher文件夹, 自行按需选择缺失的DLL文件即可(最后还要引用一个WPFLauncher.exe, 但是这个exe是未脱壳的, 因此你就需要一个脱好壳的exe文件)
-
 ![image-20260320193540552](https://raw.githubusercontent.com/daijunhaoMinecraft/WPFLauncher_Hook/main/assets/image-20260320193540552.png)
 
-最后测试能否编译即可
+第四步：选择 **Debug | x86** 配置，点击 **生成解决方案**，测试能否编译通过
+
+### 4. 项目配置概要
+
+| 配置项 | 值 |
+|--------|-----|
+| 目标框架 | `.NET Framework 4.8` (`net48`) |
+| 目标平台 | `x86` (32-bit) |
+| 输出类型 | 类库 (DLL) |
+| 允许不安全代码 | 是 |
+| NuGet 包 | `Newtonsoft.Json`、`System.Management`、`System.Net.Http` |
 
 
 

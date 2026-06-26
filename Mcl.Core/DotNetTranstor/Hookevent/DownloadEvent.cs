@@ -189,7 +189,7 @@ public class DownloadEvent : IMethodHook
             // 6. 执行下载
             if (threadCount == 1)
             {
-                DownloadChunk(url, filePath, 0, contentLength - 1, progressObj);
+                _ = DownloadChunk(url, filePath, 0, contentLength - 1, progressObj);
             }
             else
             {
@@ -488,7 +488,7 @@ public class DownloadEvent : IMethodHook
 
                 return;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 retries++;
                 if (retries >= 3) throw;

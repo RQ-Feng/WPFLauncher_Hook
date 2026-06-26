@@ -395,7 +395,7 @@ namespace DotNetTranstor.Hookevent
 				RegistryKey registryKey = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Netease\\MCLauncher");
 				text = (string)registryKey.GetValue(keyName);
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 			}
 			return text;

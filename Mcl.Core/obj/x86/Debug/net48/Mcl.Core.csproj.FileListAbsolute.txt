@@ -62,3 +62,19 @@ G:\Code\Hook\MCLHookProject\MclCoreDLLSrc_public\Mcl.Core\obj\x86\Debug\net48\Mc
 G:\Code\Hook\MCLHookProject\MclCoreDLLSrc_public\Mcl.Core\obj\x86\Debug\net48\Mcl.Core.pdb
 G:\Code\Hook\MCLHookProject\MclCoreDLLSrc_public\Mcl.Core\bin\x86\Debug\net48\CefSharp.dll
 G:\Code\Hook\MCLHookProject\MclCoreDLLSrc_public\Mcl.Core\bin\x86\Debug\net48\CefSharp.xml
+D:\something\Git source\WPFLauncher_Hook\Mcl.Core\obj\x86\Debug\net48\Mcl.Core.csproj.AssemblyReference.cache
+D:\something\Git source\WPFLauncher_Hook\Mcl.Core\obj\x86\Debug\net48\Mcl.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\something\Git source\WPFLauncher_Hook\Mcl.Core\obj\x86\Debug\net48\Mcl.Core.csproj.CoreCompileInputs.cache
+D:\something\Git source\WPFLauncher_Hook\Mcl.Core\obj\x86\Debug\net48\Mcl.Core.sourcelink.json
+D:\something\Git source\WPFLauncher_Hook\Mcl.Core\obj\x86\Debug\net48\Mcl.Core.dll
+D:\something\Git source\WPFLauncher_Hook\Mcl.Core\obj\x86\Debug\net48\Mcl.Core.pdb
+D:\something\Git source\WPFLauncher_Hook\Mcl.Core\bin\x86\Debug\net48\Mcl.Core.dll
+D:\something\Git source\WPFLauncher_Hook\Mcl.Core\bin\x86\Debug\net48\Mcl.Core.pdb
+D:\something\Git source\WPFLauncher_Hook\Mcl.Core\bin\x86\Debug\net48\Newtonsoft.Json.dll
+D:\something\Git source\WPFLauncher_Hook\Mcl.Core\bin\x86\Debug\net48\System.CodeDom.dll
+D:\something\Git source\WPFLauncher_Hook\Mcl.Core\bin\x86\Debug\net48\CefSharp.dll
+D:\something\Git source\WPFLauncher_Hook\Mcl.Core\bin\x86\Debug\net48\NLog.dll
+D:\something\Git source\WPFLauncher_Hook\Mcl.Core\bin\x86\Debug\net48\websocket-sharp.dll
+D:\something\Git source\WPFLauncher_Hook\Mcl.Core\bin\x86\Debug\net48\WPFControls.dll
+D:\something\Git source\WPFLauncher_Hook\Mcl.Core\bin\x86\Debug\net48\WPFLauncher.exe
+D:\something\Git source\WPFLauncher_Hook\Mcl.Core\obj\x86\Debug\net48\Mcl.Core.csproj.Up2Date

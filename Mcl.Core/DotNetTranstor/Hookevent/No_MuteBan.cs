@@ -31,7 +31,7 @@ namespace DotNetTranstor.Hookevent
 	internal class No_MuteBan : IMethodHook
 	{
 		[OriginalMethod]
-		public new bool No_MuteBan_1()
+		public bool No_MuteBan_1()
 		{
 			return false;
 		}
@@ -39,7 +39,7 @@ namespace DotNetTranstor.Hookevent
 		[CompilerGenerated]
 		[HookMethod("WPFLauncher.Model.UserM", "a", "No_MuteBan_1")]
 		// Token: 0x06004CA7 RID: 19623 RVA: 0x000FE53C File Offset: 0x000FC73C
-		public new bool a()
+		public bool a()
 		{
 			// // 获取ayx<UserM>的实例
 			// var instance = ayx<UserM>.Instance;

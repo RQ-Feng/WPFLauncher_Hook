@@ -10,7 +10,6 @@ namespace Mcl.Core.DotNetTranstor.Window
     {
         private TextBox ipTextBox;
         private TextBox portTextBox;
-        private CheckBox compressCheckBox; // 新增 CheckBox
         private Button applyButton;
         private Button cancelButton;
 

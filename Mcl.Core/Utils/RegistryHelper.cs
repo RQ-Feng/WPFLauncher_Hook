@@ -13,7 +13,7 @@ namespace Mcl.Core.Utils
 			{
 				RegistryHelper.registrykey = Registry.CurrentUser.CreateSubKey(path);
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 			}
 		}
@@ -29,7 +29,7 @@ namespace Mcl.Core.Utils
 					registryKey.SetValue(key, value);
 				}
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 			}
 		}
@@ -53,7 +53,7 @@ namespace Mcl.Core.Utils
 				}
 				text2 = text;
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 				text2 = null;
 			}

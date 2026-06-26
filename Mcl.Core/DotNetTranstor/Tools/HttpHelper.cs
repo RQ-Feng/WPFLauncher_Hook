@@ -111,7 +111,7 @@ public class SimpleHttpServer
                     }
                     else if (context.Request.Url.AbsolutePath.StartsWith("/websocket"))
                     {
-                        HandleWebSocketRequest(context);
+                        _ = HandleWebSocketRequest(context);
                     }
                     else
                     {
@@ -403,7 +403,7 @@ public class SimpleHttpServer
                     {
                         requestBody = JsonConvert.SerializeObject(JsonConvert.DeserializeObject(queryParams["data"]));
                     }
-                    catch (Exception e)
+                    catch (Exception)
                     {
                         requestBody = queryParams["data"];
                     }
@@ -487,7 +487,7 @@ public class SimpleHttpServer
                     {
                         requestBody = JsonConvert.SerializeObject(JsonConvert.DeserializeObject(queryParams["data"]));
                     }
-                    catch (Exception e)
+                    catch (Exception)
                     {
                         requestBody = queryParams["data"];
                     }
@@ -584,7 +584,7 @@ public class SimpleHttpServer
                     response.currentPlayers = entity.cur_num;
                     response.gameStatus = entity.game_status;
                     response.version = entity.version;
-                    response.hasPassword = entity.password != null && entity.password.ToString() != "0";
+                    response.hasPassword = entity.password;
                     response.password = Path_Bool.Password;
                     response.visibility = entity.visibility;
                     response.allowSave = entity.allow_save;
@@ -697,8 +697,7 @@ public class SimpleHttpServer
                 SendResponse.currentPlayers = Path_Bool.RoomInfo.entity.cur_num;
                 SendResponse.gameStatus = Path_Bool.RoomInfo.entity.game_status;
                 SendResponse.version = Path_Bool.RoomInfo.entity.version;
-                SendResponse.hasPassword = Path_Bool.RoomInfo.entity.password != null &&
-                                           Path_Bool.RoomInfo.entity.password.ToString() != "0";
+                SendResponse.hasPassword = Path_Bool.RoomInfo.entity.password;
                 SendResponse.password = Path_Bool.Password;
                 SendResponse.visibility = Path_Bool.RoomInfo.entity.visibility;
                 SendResponse.allowSave = Path_Bool.RoomInfo.entity.allow_save;
@@ -1713,7 +1712,7 @@ public class SimpleHttpServer
                     {
                         requestObject = JsonConvert.DeserializeObject<dynamic>(requestBody);
                     }
-                    catch (Exception e)
+                    catch (Exception)
                     {
                     }
 

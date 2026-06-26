@@ -19,7 +19,7 @@ namespace Mcl.Core.DotNetTranstor.Window
         private Button _btnRefresh;
         private Label _lblStatus;
         private ContextMenuStrip _rowContextMenu;
-        private System.Windows.Forms.Timer _refreshTimer;
+        private System.Windows.Forms.Timer _refreshTimer = null!;
         
         // [新增] 声明 ToolTip 组件
         private ToolTip _toolTip; 

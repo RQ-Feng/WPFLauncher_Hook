@@ -17,9 +17,6 @@ internal class Ocr
     // Token: 0x04000021 RID: 33
     private static object inner_asyncObject = new();
 
-    // Token: 0x04000022 RID: 34
-    private static int inner_startPort = 50001;
-
     /// <summary>
     ///     异步执行命令（已清空，不再使用）
     /// </summary>
@@ -208,8 +205,8 @@ internal static class ThreadHelperSTATask
         var thread = new Thread(() => { worker(); })
         {
             IsBackground = true,
-            ApartmentState = ApartmentState.STA // 关键：设置为 STA
         };
+        thread.SetApartmentState(ApartmentState.STA);
         thread.Start();
         thread.Join(); // 等待完成
     }

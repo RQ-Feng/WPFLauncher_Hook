@@ -1,12 +1,9 @@
-﻿/Mcl.Core/bin/x86/Debug/net48/WPFLauncher.dump.exe
-/Mcl.Core/bin/x86/Debug/net48/Mcl.Core.pdb
-/Mcl.Core/bin/x86/Debug/net48/Newtonsoft.Json.dll
-/Mcl.Core/bin/x86/Debug/net48/NLog.dll
-/Mcl.Core/bin/x86/Debug/net48/System.CodeDom.dll
-/Mcl.Core/bin/x86/Debug/net48/websocket-sharp.dll
-/Mcl.Core/bin/x86/Debug/net48/WPFControls.dll
-*.pdb
-*.json
-*.info
-*.xml
-*.7z
+﻿# 1. 忽略 net48 文件夹下的所有内容
+Mcl.Core/bin/x86/Debug/net48/*
+
+# 2. 排除不需要忽略的特定 DLL（注意前面是正斜杠 /）
+!Mcl.Core/bin/x86/Debug/net48/Mcl.Core.dll
+!Mcl.Core/bin/x86/Debug/net48/wintun.dll
+
+# 3. 忽略 References 文件夹（建议去掉开头的斜杠，除非它就在项目根目录）
+References/

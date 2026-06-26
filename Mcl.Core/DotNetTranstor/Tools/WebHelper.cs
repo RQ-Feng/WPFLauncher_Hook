@@ -48,12 +48,12 @@ public static class WebSocketHelper
 
         // 向所有连接的客户端发送消息
         //_server.WebSocketServices["/"].Sessions.Broadcast(message);
-        SimpleHttpServer.BroadcastWebSocketMessage(message);
+        _ = SimpleHttpServer.BroadcastWebSocketMessage(message);
     }
 
     public static void SendToClient(string message)
     {
-        SimpleHttpServer.BroadcastWebSocketMessage(message);
+        _ = SimpleHttpServer.BroadcastWebSocketMessage(message);
         // // 检查WebSocket服务是否已启动
         // if (_server == null)
         // {

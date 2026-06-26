@@ -1,36 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Code\\Hook\\MCLHookProject\\MclCoreDLLSrc_public\\Mcl.Core\\Mcl.Core.csproj": {}
+    "D:\\something\\Git source\\WPFLauncher_Hook\\Mcl.Core\\Mcl.Core.csproj": {}
   },
   "projects": {
-    "G:\\Code\\Hook\\MCLHookProject\\MclCoreDLLSrc_public\\Mcl.Core\\Mcl.Core.csproj": {
+    "D:\\something\\Git source\\WPFLauncher_Hook\\Mcl.Core\\Mcl.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Code\\Hook\\MCLHookProject\\MclCoreDLLSrc_public\\Mcl.Core\\Mcl.Core.csproj",
+        "projectUniqueName": "D:\\something\\Git source\\WPFLauncher_Hook\\Mcl.Core\\Mcl.Core.csproj",
         "projectName": "Mcl.Core",
-        "projectPath": "G:\\Code\\Hook\\MCLHookProject\\MclCoreDLLSrc_public\\Mcl.Core\\Mcl.Core.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "G:\\Code\\Hook\\MCLHookProject\\MclCoreDLLSrc_public\\Mcl.Core\\obj\\",
+        "projectPath": "D:\\something\\Git source\\WPFLauncher_Hook\\Mcl.Core\\Mcl.Core.csproj",
+        "packagesPath": "C:\\Users\\A1231\\.nuget\\packages\\",
+        "outputPath": "D:\\something\\Git source\\WPFLauncher_Hook\\Mcl.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "F:\\Application\\Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\A1231\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net48"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net48": {
+            "framework": "net48",
             "targetAlias": "net48",
             "projectReferences": {}
           }
@@ -49,6 +43,7 @@
       },
       "frameworks": {
         "net48": {
+          "framework": "net48",
           "targetAlias": "net48",
           "dependencies": {
             "System.Management": {
@@ -60,7 +55,7 @@
               "version": "[4.3.4, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

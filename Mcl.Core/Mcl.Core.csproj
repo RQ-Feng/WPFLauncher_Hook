@@ -174,15 +174,15 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="CefSharp">
-      <HintPath>E:\MCLauncher\CefSharp.dll</HintPath>
+      <HintPath>..\References\CefSharp.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Newtonsoft.Json">
-      <HintPath>E:\MCLauncher\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\References\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="NLog">
-      <HintPath>E:\MCLauncher\NLog.dll</HintPath>
+      <HintPath>..\References\NLog.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
@@ -190,14 +190,14 @@
     <Reference Include="PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="websocket-sharp">
-      <HintPath>E:\MCLauncher\websocket-sharp.dll</HintPath>
+      <HintPath>..\References\websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="WPFControls">
-      <HintPath>E:\MCLauncher\WPFControls.dll</HintPath>
+      <HintPath>..\References\WPFControls.dll</HintPath>
     </Reference>
     <Reference Include="WPFLauncher">
-      <HintPath>..\..\..\..\C#\C#杂项\WPFTool\WPFLauncher.dump.exe</HintPath>
+      <HintPath>..\References\WPFLauncher.exe</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -206,5 +206,6 @@
   <ItemGroup>
     <PackageReference Include="System.Management" Version="10.0.0-preview.7.25380.108" />
     <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <!-- Newtonsoft.Json 改为本地引用（见上方 Reference） -->
   </ItemGroup>
 </Project>

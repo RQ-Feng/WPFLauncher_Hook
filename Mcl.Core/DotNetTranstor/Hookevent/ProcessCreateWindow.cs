@@ -304,11 +304,7 @@ namespace MicrosoftTranslator.DotNetTranstor.Hookevent
 
     public class ProcessCreateWindow : IMethodHook
     {
-        private static ClientWebSocket _webSocket;
-        private static bool _isReceiving;
         private static readonly CancellationTokenSource _cancellationTokenSource = new CancellationTokenSource();
-        private static CppGameConfig CppConfigContent = null;
-        private static string CppConfigPath = null;
         
         //创建进程窗口
         [OriginalMethod]

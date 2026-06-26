@@ -316,13 +316,13 @@ namespace DotNetTranstor.Hookevent
 		#region KickEvent
 
 		[OriginalMethod]
-		private new void SendErrToWpf(abx packet)
+		private void SendErrToWpf(abx packet)
 		{
 		}
 
 		[CompilerGenerated]
 		[HookMethod("WPFLauncher.Network.ChatService.ahl", "c", "SendErrToWpf")]
-		private new void ReJoinRoom(abx packet)
+		private void ReJoinRoom(abx packet)
 		{
 			Console.ForegroundColor = ConsoleColor.Red;
 			Console.WriteLine("[RoomInfo]你已被房主踢出房间,正在重新加入房间");

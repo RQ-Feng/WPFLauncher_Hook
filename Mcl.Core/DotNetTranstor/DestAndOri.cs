@@ -17,6 +17,6 @@ namespace DotNetTranstor
 		public MethodBase OriginalMethod { get; set; }
 
 		// Token: 0x04000016 RID: 22
-		public IMethodHook Obj;
+		public IMethodHook Obj = null!;
 	}
 }

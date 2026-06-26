@@ -17,14 +17,8 @@ namespace DotNetTranstor.Hookevent
 {
     public class RoomInfoWindow : Window
     {
-        private HashSet<string> _existingCookies;
-        private ListBox _playersList;
         private Dictionary<string, TextBlock> _infoBlocks;
-        private CheckBox _enableNerk;
         private ListBox _logList;
-        private WrapPanel _playersPanel;
-        private ScrollViewer _playersScrollViewer;
-        private TextBox _switchCookieInput;
         public EntityResponse<LobbyGameRoomEntity> roomInfoResponse;
 
         public RoomInfoWindow(EntityResponse<LobbyGameRoomEntity> roomInfo)
