@@ -43,6 +43,7 @@ namespace DotNetTranstor.Hookevent
 
             // 模组与高级
             new ConfigEntry { Key = "EnableModsInject", Description = "启用模组注入", FieldType = typeof(bool), Category = "高级功能" },
+            new ConfigEntry { Key = "Bypass4399ServerEntry", Description = "绕过4399无法进服", FieldType = typeof(bool), Category = "高级功能" },
             new ConfigEntry { Key = "NeteaseUpdateDomainhttp", Description = "网易更新域名", FieldType = typeof(string), Category = "高级功能" },
             
             // Experiment
